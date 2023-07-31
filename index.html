@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="KlaynMolina">
-    <link rel="icon" href="https://i.pinimg.com/originals/61/09/1c/61091c9588a1e991ef0b22f683780115.png">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
-    <title>CV</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="KlaynMolina">
+        <link rel="icon"
+            href="https://i.pinimg.com/originals/61/09/1c/61091c9588a1e991ef0b22f683780115.png">
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+            rel="stylesheet">
+        <title>CV</title>
 
-    <style>
+        <style>
         * {
             font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
         }
 
         li {
@@ -27,19 +32,21 @@
             width: 95%;
             display: flex;
             justify-content: center;
+            margin: auto;
         }
 
         .main-container {
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: space-evenly;
+            justify-content: space-evenly;           
         }
-
+        
         .sheet-container {
             border: 1px solid black;
-            width: 70vw;
             text-align: center;
+            margin: 2%;
+            padding: 1%;
         }
 
         .nome {
@@ -52,36 +59,44 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-        }
 
+        }
+        
         .info li {
             margin-right: 40px;
             margin-left: 30px;
             margin-bottom: 10px;
         }
-
+        
         .itens {
+            padding: 10px 30px;
             text-align: left;
-            margin-left: 50px;
         }
-
+        
         .itens h3 {
             border-bottom: 2px solid black;
-            width: 95%;
+            width: 99%;
+            margin-bottom: 1.5%;
         }
-
+        
         .apresentacao p {
+            width: 95%;
             text-align: justify;
-            margin-right: 50px;
+            line-height: 2;
         }
 
         .conhecimentos {
             display: flex;
-            align-items: left;
-            justify-content: space-between;
-            margin-right: 60px;
-            margin-left: 60px;
+            justify-content: left;
+            line-height: 2;
+        }
+
+        .conhecimentos li {
+            width: 200px;
             margin-bottom: 20px;
+            margin-right: 10px;
+            margin-left: 100px;
+            text-align: left;
         }
 
         .formacao {
@@ -90,6 +105,7 @@
 
         .idiomas {
             line-height: 2;
+            text-align: justify;
         }
 
         .cursos {
@@ -98,101 +114,141 @@
 
         .experiencia p {
             text-align: justify;
-            margin-right: 50px;
-            line-height: 1.5;
+            line-height: 2;
+            margin-bottom: 20px;
+        }
+
+        @media(max-width: 1000px) {
+            .sheet-container {
+                margin: auto;
+            }
+
+            .conhecimentos {
+                flex-direction: column;
+                margin: 0;
+            }
+
+            .formacao li{
+                margin: 10px;
+            }
+
+            .cursos li{
+                margin: 10px;
+            }
+
+            .experiencia p {
+                margin: 20px 10px;
+            }
         }
     </style>
-</head>
+    </head>
 
-<body>
+    <body>
 
-    <div class="main-container">
-        <div class="sheet-container">
-            <h1 class="nome">Vanessa Klayn Ramos Molina</h1>
-            <div class="info">
-                <li><a href="tel:+5521983994394">(21) 98399-4394</a></li>
-                <li><a href="mailto:vanessakrmolina@hotmail.com">vanessakrmolina@hotmail.com</a></li>
-                <li><a
-                        href="https://www.linkedin.com/in/vanessakrmolina">https://www.linkedin.com/in/vanessakrmolina</a>
-                </li>
-                <li><a href="https://klaynmolina.com.br/">https://klaynmolina.com.br/</a></li>
-                <li><a href="https://github.com/klaynmolina">https://github.com/klaynmolina</a></li>
-                <li>Maricá, Rio de Janeiro.</li>
+        <div class="main-container">
+            <div class="sheet-container">
+                <h1 class="nome">Vanessa Klayn Ramos Molina</h1>
+                <div class="info">
+                    <li><a href="tel:+5521983994394">(21) 98399-4394</a></li>
+                    <li><a href="mailto:vanessakrmolina@hotmail.com">vanessakrmolina@hotmail.com</a></li>
+                    <li><a
+                            href="https://www.linkedin.com/in/vanessakrmolina">https://www.linkedin.com/in/vanessakrmolina</a>
+                    </li>
+                    <li><a href="https://klaynmolina.com.br/">https://klaynmolina.com.br/</a></li>
+                    <li><a href="https://github.com/klaynmolina">https://github.com/klaynmolina</a></li>
+                    <li>Maricá, Rio de Janeiro.</li>
+                </div>
+
+                <div class="itens apresentacao">
+                    <h3>APRESENTAÇÃO</h3>
+                    <p>Meu objetivo é atuar na área de desenvolvimento de
+                        sistemas (Front-end || Back-end || Full Stack).
+                        Estou cursando Engenharia de Software e venho estudando
+                        programação em Java, porém não tenho
+                        problemas para aprender outras linguagens || frameworks
+                        || banco de dados.
+
+                        Portfólio com meus principais projetos:
+                        https://klaynmolina.com.br/</p>
+                </div>
+
+                <div class="itens">
+                    <h3>CONHECIMENTOS</h3>
+                </div>
+                <div class="conhecimentos">
+                    <li>Java</li>
+                    <li>Spring Boot</li>
+                    <li>Banco de dados MySQL</li>
+                    <li>Git / GitHub</li>
+                </div>
+                <div class="conhecimentos">
+                    <li>HTML 5</li>
+                    <li>CSS 3</li>
+                    <li>Javascript</li>
+                    <li>Pacote Office</li>
+                </div>
+
+                <div class="itens formacao">
+                    <h3>FORMAÇÃO ACADÊMICA</h3>
+                    <li>Bacharelado em Engenharia de Software, Universidade
+                        Estácio de Sá (2023/Em andamento).</li>
+                    <li>Bacharelado em Administração, Centro Universitário La
+                        Salle do Rio de Janeiro (2011/2015).</li>
+                </div>
+
+                <div class="itens idiomas">
+                    <h3>IDIOMAS</h3>
+                    <p>Inglês (C1 ADVANCED on reading and listening, according
+                        to the guidelines set by the Common European
+                        Framework of Reference (CEFR) applied in the English
+                        Live Test.)</p>
+                </div>
+
+                <div class="itens cursos">
+                    <h3>CURSOS</h3>
+                    <li>2023 - Programação Básica em Front-End (20h), SENAI.</li>
+                    <li>2022 - Desenvolvedor Java (200hrs), +praTi e Alfamidia
+                        Educação Profissional.</li>
+                    <li>2022 - Santander Bootcamp Fullstack Developer (120 hrs),
+                        DIO.</li>
+                    <li>2022 - HTML e CSS na Prática (24hrs), Fundação Bradesco.</li>
+                    <li>2021 - Fundamentos de Lógica de Programação (15hrs),
+                        Fundação Bradesco.</li>
+                    <li>2021 - Introdução à Programação Orientada a Objetos
+                        (10hrs), Fundação Bradesco.</li>
+                </div>
+
+                <div class="itens experiencia">
+                    <h3>EXPERIÊNCIA PROFISSIONAL</h3>
+
+                    <p>
+                        03/2014 – 06/2015: Estagiária em Administração,
+                        Ministério do Trabalho e Emprego - RJ. <br>
+                        Auxílio na confecção, atualização e organização de
+                        planilhas de controle administrativo, processos
+                        de capacitação e documentos do setor.
+                    </p>
+
+                    <p>
+                        2017 – 2023: Técnica em Informática | Assistente
+                        Administrativo | Fotógrafa, MEI. <br>
+                        Prestação de serviço técnico voltado a reparo de
+                        sistemas Windows e Android. | Gestão de loja,
+                        confecção de documentos administrativos, operação de
+                        sistema e atendimento ao cliente. | Serviços
+                        fotográficos.
+                    </p>
+
+                    <p>
+                        2022 – 2023: Web Designer, MEI. <br>
+                        Desenvolvimento de site institucional responsivo single
+                        page/multipage em HTML e CSS.
+                    </p>
+                </div>
+
             </div>
-
-            <div class="itens apresentacao">
-                <h3>APRESENTAÇÃO</h3>
-                <p>Meu objetivo é atuar na área de desenvolvimento de sistemas (Front-end || Back-end || Full Stack).
-                    Estou cursando Engenharia de Software e venho estudando programação em Java, porém não tenho
-                    problemas para aprender outras linguagens || frameworks || banco de dados.
-
-                    Portfólio com meus principais projetos: https://klaynmolina.com.br/</p>
-            </div>
-
-            <div class="itens">
-                <h3>CONHECIMENTOS</h3>
-            </div>
-            <div class="conhecimentos">
-                <li>Java</li>
-                <li>Spring Boot</li>
-                <li>Banco de dados MySQL</li>
-                <li>Git / GitHub</li>
-            </div>
-            <div class="conhecimentos">
-                <li>HTML 5</li>
-                <li>CSS 3</li>
-                <li>Javascript</li>
-                <li>Pacote Office</li>
-            </div>
-
-
-            <div class="itens formacao">
-                <h3>FORMAÇÃO ACADÊMICA</h3>
-                <li>Bacharelado em Engenharia de Software, Universidade Estácio de Sá (2023/Em andamento).</li>
-                <li>Bacharelado em Administração, Centro Universitário La Salle do Rio de Janeiro (2011/2015).</li>
-            </div>
-
-            <div class="itens idiomas">
-                <h3>IDIOMAS</h3>
-                <p>Inglês (C1 ADVANCED on reading and listening, according to the guidelines set by the Common European
-                    Framework of Reference (CEFR) applied in the English Live Test.)</p>
-            </div>
-
-            <div class="itens cursos">
-                <h3>CURSOS</h3>
-                <li>2023 - Programação Básica em Front-End (20h), SENAI.</li>
-                <li>2022 - Desenvolvedor Java (200hrs), +praTi e Alfamidia Educação Profissional.</li>
-                <li>2022 - Santander Bootcamp Fullstack Developer (120 hrs), DIO.</li>
-                <li>2022 - HTML e CSS na Prática (24hrs), Fundação Bradesco.</li>
-                <li>2021 - Fundamentos de Lógica de Programação (15hrs), Fundação Bradesco.</li>
-                <li>2021 - Introdução à Programação Orientada a Objetos (10hrs), Fundação Bradesco.</li>
-            </div>
-
-            <div class="itens experiencia">
-                <h3>EXPERIÊNCIA PROFISSIONAL</h3>
-
-                <p>
-                    03/2014 – 06/2015: Estagiária em Administração, Ministério do Trabalho e Emprego - RJ. <br>
-                    Auxílio na confecção, atualização e organização de planilhas de controle administrativo, processos
-                    de capacitação e documentos do setor.
-                </p>
-
-                <p>
-                    2017 – 2023: Técnica em Informática | Assistente Administrativo | Fotógrafa, MEI. <br>
-                    Prestação de serviço técnico voltado a reparo de sistemas Windows e Android. | Gestão de loja,
-                    confecção de documentos administrativos, operação de sistema e atendimento ao cliente. | Serviços
-                    fotográficos.
-                </p>
-
-                <p>
-                    2022 – 2023: Web Designer, MEI. <br>
-                    Desenvolvimento de site institucional responsivo single page/multipage em HTML e CSS.
-                </p>
-            </div>
-
         </div>
-    </div>
 
-</body>
+    </body>
 
 </html>
